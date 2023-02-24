@@ -1,4 +1,4 @@
-# Projekseite-2-HJ
+# Projektseite-2-HJ
 
 ## [_Konzept_](#Konzept)
 ## [_Programm_](#Programm)
