@@ -17,12 +17,18 @@ Unsere Projekte haben wir im zweiten Halbjahr mit der Programmiersprache [PyChar
 ### Code <a name="Code"></a>
 *1.Programm*: 
 Zuerst haben wir unseren Datums-Generator programmiert. Hierfür ist zunächst der Begriff ,,import" sehr wichtig. Mit diesem haben wir den ,,calendar" importiert, welcher in sogenannten Modulen/Packages auf PyCharm vorinstalliert ist. Hiermit hatten wir also unsere Grundlage für das Programm und PyCharm konnte auf alle Daten zugreifen. 
+
 Als nächstes ist es wichtig dem Programm die zu errrechnende Variable zu geben bzw. diese zu definieren. In unserem Fall war das ,,findday(dates)", dies macht man mit dem Kurzbefehl ,,def", also bei uns ,,def findday(dates)". Wenn man nun die Enter-Taste drückt, springt man in die Zeile, wo man diese Variable richtig definiert. Wir mussten PyCharm nun also beibringen, wie er daten schreibt bzw. wenn sie vom User eingegeben werden, wie ee sie liest, also von Tag nach Jahr. Dafür haben wir ihm diese Begriffe gegegeben ,,day, month, year" und ihm dann gesagt woher er sie später bekommt bzw. wo er sie ablesen kann und zwar schreibt der Nutzer das Datum zwischen "..." , z.B. "06 04 2023". Dies haben wir mit "(int(i) for i in dates.split(" ")" programmiert, diesen Befehl findet man bei [PyCharm](https://www.jetbrains.com/pycharm/promo/?). 
+
 Nun ging es an den Teil, PyCharm beizubringen, woher er das WIssen nimmt, welcher Tag das Datum war. Dazu haben wir die Variable ,,daynumber" eigeführt und diese definiert. PyCharm sollte das Datum mit Hilfe des ,,calendars" prüfen bzw. daher das Wissen nehmen, welcher Tag es war. Dazu haben wir ,,daynumber" mit "=" definiert, als ,,calendar.week(year,month, day). In umgekehrter Reihnfolge zu dem wie man ein Datum liest, da er im Kalender erstmal das richtige Jahr, dann den richhtigen Monat und dann den genauen Tag finden muss, denn es gibt ja z.B. viele 01.12, aber nur ein 2022. 
 Ein weitrerer wichtiger Schritt war es die Wochentage zu definieren, weil das schlussendliche Ziel ja die Ausgabe des Wochentages zum Datum ist. Dafür haben wir die Variable ,,days" definiert und einfach die Wochentage aufgelistet. Wichtig hierbei war es sie immer in doppelten Strings zu schreiben, da wir im oben beigebracht hatten, dass das Datum in doppelten Strings eingegeben wird. Wir hatten nun also ,,days= [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]. 
+
 Nun waren wir am Ende des Programms und wir haben ihm mit dem Befehl ,,return" beigebracht die beiden definierten Variablen "daynumber" und "days" zu verbinden, sodass er das im Kalender gefundene Datum als Wochentag wiedergibt.
+
 Zum Schluss haben wir die Variable date=" " genommen, da wir am Anfang die zu berechnende Variable als ,,dates" eingegeben haben und es nicht genau diesselbe sein darf, da PyCharm sonst die Fehlermeldung ,,shadowing" meldet, die bedeutet, dass man die Variable nicht nochmal verwenden darf.
+
 Nun kam der letzte Befehl, ,,print" und hier muss wieder die Anfangsvariable rein, damit er den Vorgang abspult, den wir ihm programmiert haben, also ,,findday(date)", so hatten wir ,,print(findday(date))". 
+
 Wenn man nun bei date=" " zwischen die doppelten Strings ein Datum tippt (ohne Punkt), also z.B. date = "24 03 2023", dann errechnet er einem den Wochentag, hier wäre es Freitag.
 
 
