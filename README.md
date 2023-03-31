@@ -35,4 +35,9 @@ Nun kam der letzte Befehl, ,,print" und hier muss wieder die Anfangsvariable rei
 
 Wenn man nun bei date=" " zwischen die doppelten Strings ein Datum tippt (ohne Punkt), also z.B. date = "24 03 2023", dann errechnet er einem den Wochentag, hier wäre es Freitag.
 
+*2. Programm*
+Bei unserem zweiten Programm war das Ziel, eine zufällige Zahl in einem festgelegten Zahlenintervall zu erzeugen. Dafür haben wir zuerst das Modul ,,random" mit dem Befehl ,,import" importiert. Nun kannte PyCharm also die Funktion etwas zufällig auszuwählen. 
+Jetzt mussten wir PyCharm die Funktion geben, die Zahl in einem Bereich von x,y auszuwählen und dann anzuzeigen. Dafür haben wir in den Befehl ,,print()" ,,random.randrange()" eingefügt, hiermit konnten wir das Intervall festlegen. In unserem Fall war es 1-10 und somit hieß es nun ,,print(random.randrange(1,10))" und PyCharm wählt einem eine zufällige Zahl von 1- 10 aud, wenn man oben den grünen Playbutton drückt.  
+
+![Screenshot (44)](https://user-images.githubusercontent.com/111355300/229092760-f5ef8648-0277-4a86-8a8d-e4401d3cfeea.png)
 
